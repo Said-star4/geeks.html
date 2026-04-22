@@ -1,0 +1,734 @@
+
+
+{% extends 'include/homepage.html' %}
+{% block content %}
+{% load static %}
+    <!-- start page-wrapper -->
+    <div class="page-wrapper">
+        <!-- start preloader -->
+        <div class="preloader">
+            <div class="vertical-centered-box">
+                <div class="content">
+                    <div class="loader-circle"></div>
+                    <div class="loader-line-mask">
+                        <div class="loader-line"></div>
+                    </div>
+                    <img src="{% static 'assets/images/preloader.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- end preloader -->
+
+        <!--  cursor style -->
+        <div class="cursor"></div>
+        <div class="cursor2"></div>
+
+        <!-- Start header -->
+        <header id="header">
+            <div class="wpo-site-header">
+                <nav class="navigation navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-lg-3 col-md-2 col-3 d-lg-none dl-block">
+                                <div class="mobail-menu">
+                                    <button type="button" class="navbar-toggler open-btn">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar first-angle"></span>
+                                        <span class="icon-bar middle-angle"></span>
+                                        <span class="icon-bar last-angle"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-5">
+                                <div class="navbar-header">
+                                    <a class="navbar-brand" href="index.html"><img src="{% static 'assets/images/logo.png' %}"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-3 col-3">
+                                <div class="header-right">
+                                    <div class="close-form">
+                                        <p>Designer & Photographer</p>
+                                        <p>Based in San Francisco</p>
+                                        <div class="icon">
+                                            <img src="{% static 'assets/images/arrow-2.svg' %}" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-1 col-1">
+                                <div id="navbar" class="collapse navbar-collapse navigation-holder">
+                                    <button class="menu-close"><i class="ti-close"></i></button>
+                                    <ul class="nav navbar-nav mb-2 mb-lg-0">
+                                        <li><a href="#about" class="menu-link">About</a></li>
+                                        <li><a href="#service" class="menu-link">Service</a></li>
+                                        <li><a href="#portfolio" class="menu-link">Work</a></li>
+                                        <li><a class="hire-me menu-link" href="#contact">Hire Me</a></li>
+                                    </ul>
+                                </div>
+                                <!-- end of nav-collapse -->
+                            </div>
+                        </div>
+                    </div><!-- end of container -->
+                </nav>
+            </div>
+        </header>
+        <!-- end of header -->
+
+        <!-- start wpo hero static -->
+        <section class="wpo-hero-static">
+            <div class="container-fluid">
+                <div class="wpo-hero-wrap">
+                    <div class="hero-content">
+                        <h1 class="poort-text poort-in-up">Shoot</h1>
+                        <div class="line-s1">
+                            <img src="{% static 'assets/images/line-1.svg' %}" alt="">
+                        </div>
+                        <div class="line-s2">
+                            <img src="{% static 'assets/images/line-2.svg' %}" alt="">
+                        </div>
+                        <div class="line-s3">
+                            <img src="{% static 'assets/images/line-3.svg' %}" alt="">
+                        </div>
+                        <div class="line-s4">
+                            <img src="{% static 'assets/images/line-4.svg' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="hero-image ">
+                        <img src="{% static 'assets/images//hero/image-1.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="shape">
+                <img src="{% static 'assets/images/hero/shape.svg' %}" alt="">
+            </div>
+        </section>
+        <!-- end wpo hero static -->
+
+        <!-- Start about section -->
+        <section class="wpo-about-section" id="about">
+            <div class="container">
+                <div class="about-wrap">
+                    <div class="about-text-animation wow fadeInUp" data-wow-duration="1200ms">
+                        <div class="about-text-color">
+                            <h2>I help clients preserve moments<br>that matter, crafting photography<br>that
+                                connects,
+                                inspires, and tells<br> authentic, timeless stories.</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end about section -->
+
+        <!-- Start portfolio section -->
+        <section class="wpo-portfolio-section" id="portfolio">
+            <div class="container">
+                <div class="portfolio-wrap">
+                    <div class="wpo-section-title">
+                        <h2 class="poort-text poort-in-right">Works <span>(4)</span></h2>
+                    </div>
+                    <div class="row">
+                        <div class="col col-lg-4 col-md-6 col-12">
+                            <div class="portfolio-card wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="portfolio-image left-to-right-light">
+                                    <img src="{% static 'assets/images/portfolio/image-1.jpg' %}" alt="">
+                                </div>
+                                <div class="portfolio-tag">
+                                    <span>Weddings</span>
+                                </div>
+                                <div class="portfolio-text">
+                                    <h3><a href="portfolio-single.html">Eternal Vows</a></h3>
+                                    <p>Timeless wedding emotions.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-lg-8 col-md-6 col-12">
+                            <div class="portfolio-card wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="portfolio-image left-to-right-light">
+                                    <img src="{% static 'assets/images/portfolio/image-2.jpg' %}" alt="">
+                                </div>
+                                <div class="portfolio-tag">
+                                    <span>Portraits</span>
+                                </div>
+                                <div class="portfolio-content">
+                                    <h3><a href="portfolio-single.html">Golden Hour</a></h3>
+                                    <p>Warm, natural portrait moments</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-lg-8 col-md-6 col-12">
+                            <div class="portfolio-card wow fadeInUp" data-wow-delay="0.3s">
+                                <div class="portfolio-image left-to-right-light">
+                                    <img src="{% static 'assets/images/portfolio/image-3.jpg' %}" alt="">
+                                </div>
+                                <div class="portfolio-tag">
+                                    <span>Lifestyle</span>
+                                </div>
+                                <div class="portfolio-content">
+                                    <h3><a href="portfolio-single.html">City Life</a></h3>
+                                    <p>Candid urban moments.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-lg-4 col-md-6 col-12">
+                            <div class="portfolio-card wow fadeInUp" data-wow-delay="0.4s">
+                                <div class="portfolio-image left-to-right-light">
+                                    <img src="{% static 'assets/images/portfolio/image-4.jpg' %}" alt="">
+                                </div>
+                                <div class="portfolio-tag">
+                                    <span>Travel</span>
+                                </div>
+                                <div class="portfolio-text">
+                                    <h3><a href="portfolio-single.html">Morning Mist</a></h3>
+                                    <p>Serene travel landscapes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end portfolio section -->
+
+        <!-- Start service section -->
+        <section class="wpo-service-section" id="service">
+            <div class="container">
+                <div class="wpo-service-wrap">
+                    <div class="wpo-section-title">
+                        <h3 class="wow fadeInUp" data-wow-duration="1200ms"><span>Capture</span></h3>
+                        <h2 class="wow fadeInUp" data-wow-duration="1400ms">Storytelling</h2>
+                        <div class="service-top">
+                            <div class="service-item-left wow fadeInUp" data-wow-duration="1600ms">
+                                <div class="theme-btn">
+                                    <i class="icon">
+                                        <a href="service-single.html">
+                                            <img src="{% static 'assets/images/arrow.svg' %}" alt="">
+                                        </a>
+                                    </i>
+                                    <i class="link-text">
+                                        <span><a href="service-single.html">Let’s</a></span>
+                                        <span><a href="service-single.html">Work Together</a></span>
+                                    </i>
+                                </div>
+                            </div>
+                            <div class="service-item-right">
+                                <h3 class="wow fadeInUp" data-wow-duration="1600ms"><span class="text-item">With</span>
+                                </h3>
+                                <h3 class="wow fadeInUp" data-wow-duration="1800ms">Clients</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-shape">
+                    <div class="service-shape-image wow slideInDown" data-wow-duration="1600ms">
+                        <img src="{% static 'assets/images/service/shape.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="service-all-item">
+                <div class="service-slider owl-carousel">
+                    <div class="service-card wow fadeInUp" data-wow-duration="1200ms">
+                        <div class="service-image">
+                            <img src="{% static 'assets/images/service/img-1.jpg' %}" alt="image">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-text">
+                                <h3><a href="service-single.html">Event Photography</a></h3>
+                                <p>Professional coverage for any event.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-card wow fadeInUp" data-wow-duration="1400ms">
+                        <div class="service-image">
+                            <img src="{% static 'assets/images/service/img-2.jpg' %}" alt="image">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-text">
+                                <h3><a href="service-single.html">Portrait Photography</a></h3>
+                                <p>Natural portraits with authentic expression.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-card wow fadeInUp" data-wow-duration="1600ms">
+                        <div class="service-image">
+                            <img src="{% static 'assets/images/service/img-3.jpg' %}" alt="image">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-text">
+                                <h3><a href="service-single.html">Brand & Commercial Photography</a></h3>
+                                <p>Clean visuals for modern brands.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-card wow fadeInUp" data-wow-duration="1800ms">
+                        <div class="service-image">
+                            <img src="{% static 'assets/images/service/img-4.jpg' %}" alt="image">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-text">
+                                <h3><a href="service-single.html">Wedding Photography</a></h3>
+                                <p>Timeless coverage of real emotions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end portfolio section -->
+
+        <!-- Start why choose section -->
+        <section class="wpo-why-choose-section">
+            <div class="container">
+                <div class="wpo-why-choose-wrap">
+                    <div class="why-choose-top">
+                        <div class="wpo-section-title">
+                            <h3 class="poort-text poort-in-right">Why My Photography Stands Out</h3>
+                        </div>
+                    </div>
+                    <div class="why-choose-item">
+                        <div class="why-choose-comtent">
+                            <div class="why-choose-card  wow fadeInUp" data-wow-duration="1200ms">
+                                <div class="icon">
+                                    <img src="{% static 'assets/images/why-choose/icon-1.svg' %}" alt="">
+                                </div>
+                                <div class="text">
+                                    <p><span>Creative</span> Vision & Focus</p>
+                                </div>
+                            </div>
+                            <div class="why-choose-card  wow fadeInUp" data-wow-duration="1600ms">
+                                <div class="icon">
+                                    <img src="{% static 'assets/images/why-choose/icon-3.svg' %}" alt="">
+                                </div>
+                                <div class="text">
+                                    <p><span>Natural Colors</span> & Editing</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="why-choose-comtent">
+                            <div class="why-choose-card  wow fadeInUp" data-wow-duration="1400ms">
+                                <div class="icon">
+                                    <img src="{% static 'assets/images/why-choose/icon-2.svg' %}" alt="">
+                                </div>
+                                <div class="text">
+                                    <p>Professional Photography <span>Quality</span></p>
+                                </div>
+                            </div>
+                            <div class="why-choose-card  wow fadeInUp" data-wow-duration="1800ms">
+                                <div class="icon">
+                                    <img src="{% static 'assets/images/why-choose/icon-4.svg' %}" alt="">
+                                </div>
+                                <div class="text">
+                                    <p><span>On-Time</span> Project Delivery</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="why-choose-image wow fadeInRightSlow" data-wow-duration="1400ms">
+                        <img src="{% static 'assets/images/why-choose/image-1.jpg' %}" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="marquee-text">
+                <div class="marquee_container s2">
+                    <div class="marquee">
+                        <h2>Available worldwide
+                        </h2>
+                        <h2>Available worldwide
+                        </h2>
+                        <h2>Available worldwide
+                        </h2>
+                    </div>
+                    <div class="marquee">
+                        <h2>Available worldwide
+                        </h2>
+                        <h2>Available worldwide
+                        </h2>
+                        <h2>Available worldwide
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="marquee-text-s2">
+                <div class="marquee_container s3">
+                    <div class="marquee">
+                        <h2>Available worldwide</h2>
+                        <h2>Available worldwide</h2>
+                        <h2>Available worldwide</h2>
+                    </div>
+                    <div class="marquee">
+                        <h2>Available worldwide</h2>
+                        <h2>Available worldwide</h2>
+                        <h2>Available worldwide</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end why choose section -->
+
+        <!-- Start testimonial section -->
+        <section class="wpo-testimonial-section">
+            <div class="container">
+                <div class="testimonial-wrap">
+                    <div class="wpo-section-title">
+                        <img src="{% static 'assets/images/testimonial/shape.svg' %}" alt="">
+                        <h2 class="poort-text poort-in-right">Quotes</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col col-lg-3 col-md-6 col-12">
+                            <div class="testimonial-card wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="testimonial-image left-to-right-light">
+                                    <img src="{% static 'assets/images/testimonial/image-1.jpg' %}" alt="">
+                                </div>
+                                <div class="testimonial-content">
+                                    <div class="testimonial-text">
+                                        <p>Professional, creative, and easy to work with our brand visuals never looked
+                                            better.</p>
+                                        <small>Parker T.</small>
+                                        <span>Verified Buyer</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-lg-6 col-md-6 col-12">
+                            <div class="testimonial-card wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="testimonial-image left-to-right-light">
+                                    <img src="{% static 'assets/images/testimonial/image-2.jpg' %}" alt="">
+                                </div>
+                                <div class="testimonial-content">
+                                    <div class="icon">
+                                        <img src="{% static 'assets/images/testimonial/shape-2.svg' %}" alt="">
+                                    </div>
+                                    <div class="testimonial-text">
+                                        <h3>Lumora captured every moment perfectly; the photos were beyond our
+                                            expectations.
+                                        </h3>
+                                        <small>Mark T.</small>
+                                        <span>Brand Owner</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-lg-3 col-md-6 col-12">
+                            <div class="testimonial-card wow fadeInUp" data-wow-delay="0.3s">
+                                <div class="testimonial-image left-to-right-light">
+                                    <img src="{% static 'assets/images/testimonial/image-3.jpg' %}" alt="">
+                                </div>
+                                <div class="testimonial-content">
+                                    <div class="testimonial-text">
+                                        <p>Every detail was captured flawlessly. Highly recommend for any event!</p>
+                                        <small>Daniel K</small>
+                                        <span>Event manager</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end testimonial section -->
+
+        <!-- Start faq section -->
+        <section class="wpo-faq-section">
+            <div class="container">
+                <div class="wpo-faq-wrap">
+                    <div class="wpo-section-title">
+                        <h2 class="poort-text poort-in-right">Helpdesk</h2>
+                    </div>
+                    <div class="wpo-faq-items">
+                        <div class="faq-text wow fadeInUp" data-wow-duration="1400ms">
+                            <p>Have questions? I'm here for you, no matter where you are, ready to
+                                provide support and answers anytime.</p>
+                        </div>
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item wow fadeInUp" data-wow-duration="1200ms">
+                                <h3 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        How do I book a photography session?
+                                    </button>
+                                </h3>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" role="region" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Simply use the contact form below to share your details,
+                                            and I’ll get back to you shortly.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item wow fadeInUp" data-wow-duration="1400ms">
+                                <h3 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        What types of photography do you offer?
+                                    </button>
+                                </h3>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    role="region" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Simply use the contact form below to share your details,
+                                            and I’ll get back to you shortly.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item wow fadeInUp" data-wow-duration="1600ms">
+                                <h3 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        How far in advance should I book?
+                                    </button>
+                                </h3>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" role="region" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Simply use the contact form below to share your details,
+                                            and I’ll get back to you shortly.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item wow fadeInUp" data-wow-duration="1800ms">
+                                <h3 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        Do you travel for photoshoots?
+                                    </button>
+                                </h3>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                    role="region" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Simply use the contact form below to share your details,
+                                            and I’ll get back to you shortly.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item wow fadeInUp" data-wow-duration="2000ms">
+                                <h3 class="accordion-header" id="headingfive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapsefive" aria-expanded="false"
+                                        aria-controls="collapsefive">
+                                        How long does it take to receive photos?
+                                    </button>
+                                </h3>
+                                <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive"
+                                    role="region" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Simply use the contact form below to share your details,
+                                            and I’ll get back to you shortly.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item wow fadeInUp" data-wow-duration="2200ms">
+                                <h3 class="accordion-header" id="headingsix">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
+                                        Can I request custom photography packages?
+                                    </button>
+                                </h3>
+                                <div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="headingsix"
+                                    role="region" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Simply use the contact form below to share your details,
+                                            and I’ll get back to you shortly.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end faq section -->
+
+        <!-- Start contact section -->
+        <section class="wpo-contact-section" id="contact">
+            <div class="container">
+                <div class="wpo-contact-wrap wow fadeInUp" data-wow-duration="1400ms">
+                    <div class="wpo-contact-form-area">
+                        <div class="contact-title">
+                            <div class="title-top">
+                                <h3>Light, Camera,</h3>
+                            </div>
+                            <div class="title-item">
+                                <p><span>Turning real moments</span> into beautifully captured memories</p>
+                                <h3>Shooote</h3>
+                            </div>
+                        </div>
+                        <form method="post" class="contact-validation-active" id="contact-form-main">
+                            <div class="row">
+                                <div class="col col-lg-6 col-md-6 col-12">
+                                    <div class="input-item">
+                                        <input type="text" class="form-control" name="name" id="name"
+                                            placeholder="Full name *">
+                                    </div>
+                                </div>
+                                <div class="col col-lg-6 col-md-6 col-12">
+                                    <div class="input-item">
+                                        <input type="email" class="form-control" name="email" id="email"
+                                            placeholder="Email *">
+                                    </div>
+                                </div>
+                                <div class="col col-lg-12 col-md-12 col-12">
+                                    <div class="input-item">
+                                        <input type="number" class="form-control" name="phone" id="phone"
+                                            placeholder="Phone number *">
+                                    </div>
+                                </div>
+                                <div class="col col-lg-12 col-md-12 col-12">
+                                    <div class="input-item">
+                                        <textarea class="form-control" name="note" id="note"
+                                            placeholder="Your comment *"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col col-lg-12 col-md-12 col-12">
+                                    <div class="submit-area">
+                                        <button type="submit" class="theme-btn">
+                                            <i class="icon">
+                                                <img src="{% static 'assets/images/arrow-2.svg' %}" alt="">
+                                            </i>
+                                            <i class="link-text">
+                                                <span>Send</span>
+                                                <span>my message</span>
+                                            </i>
+                                        </button>
+                                        <div class="submit-side-text">
+                                            <p>Sending this form means you accept our Privacy Policy. We ensure your
+                                                personal details are protected</p>
+                                        </div>
+                                        <div id="loader">
+                                            <i class="ti-reload"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix error-handling-messages">
+                                <div id="success">Thank you</div>
+                                <div id="error"> Error occurred while sending email. Please try again
+                                    later.
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end about section -->
+
+        <!-- Start cta section -->
+        <section class="wpo-cta-section">
+            <div class="container">
+                <div class="wpo-cta-wrap">
+                    <div class="cta-content">
+                        <h1 class="poort-text poort-in-up">Start</h1>
+                        <div class="line-s1">
+                            <img src="{% static 'assets/images/line-1.svg' %}" alt="">
+                        </div>
+                        <div class="line-s2">
+                            <img src="{% static 'assets/images/line-2.svg' %}" alt="">
+                        </div>
+                        <div class="line-s3">
+                            <img src="{% static 'assets/images/line-3.svg' %}" alt="">
+                        </div>
+                        <div class="line-s4">
+                            <img src="{% static 'assets/images/line-4.svg' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="cta-text">
+                        <div class="cta-item">
+                            <h2 class="wow fadeInUp" data-wow-delay="0.2s">Bring your ideas to life with professional
+                                photography.</h2>
+                            <h2 class="wow fadeInUp" data-wow-delay="0.3s">Whether it’s portraits, events, or brand
+                                work, I’ll help capture it perfectly.</h2>
+                        </div>
+                        <div class="theme-btn wow fadeInUp" data-wow-delay="0.4s">
+                            <i class="icon">
+                                <a href="service-single.html">
+                                    <img src="{% static 'assets/images/arrow-2.svg' %}" alt="">
+                                </a>
+                            </i>
+                            <i class="link-text">
+                                <span><a href="service-single.html">Start</a></span>
+                                <span><a href="service-single.html">Your Project</a></span>
+                            </i>
+                        </div>
+                    </div>
+                    <div class="cta-image wow fadeInUp" data-wow-delay="0.5s">
+                        <img src="{% static 'assets/images/cta.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end cta section -->
+
+        <!-- Start wpo footer section -->
+        <footer class="wpo-site-footer">
+            <div class="container">
+                <div class="wpo-footer-wrapper">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="wpo-footer-wrap">
+                                <div class="footer-left wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="footer-item">
+                                        <ul>
+                                            <li><a href="#about" class="menu-link">About</a></li>
+                                            <li><a href="service-single.html">Service</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer-item">
+                                        <ul>
+                                            <li><a href="blog.html">Blog</a></li>
+                                            <li><a href="portfolio-single.html">Portfolio</a></li>
+                                            <li><a href="404.html">Error 404</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer-item">
+                                        <p>© (2017 - 2026) <a href="index.html">Shooote,</a> All rights reserved</p>
+                                    </div>
+                                </div>
+                                <div class="footer-middle-text">
+                                    <h2>Let’s Make</h2>
+                                    <h2>Moments</h2>
+                                </div>
+                                <div class="footer-right wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="footer-item">
+                                        <h3>Currently Available</h3>
+                                        <span>For Work</span>
+                                    </div>
+                                    <div class="link-widget">
+                                        <div class="icon">
+                                            <a href="#contact" class="menu-link">
+                                                <img src="{% static 'assets/images/arrow.svg' %}" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="text">
+                                            <h4><a href="#contact" class="menu-link">Hire</a></h4>
+                                            <h4><a href="#contact" class="menu-link">Me Now</a></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End wpo footer section -->
+    </div>
+    <!-- end of page-wrapper -->
+
+    <!-- All JavaScript files
+    ================================================== -->
+    <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+    <!-- Plugins for this template -->
+    <script src="{% static 'assets/js/modernizr.custom.js' %}"></script>
+    <script src="{% static 'assets/js/jquery-plugin-collection.js' %}"></script>
+    <!-- Custom script for this template -->
+    <script src="{% static 'assets/js/gsap-script.js' %}"></script>
+    <script src="{% static 'assets/js/script.js' %}"></script>
+</body>
+
+</html>
+{% endblock %}

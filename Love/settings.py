@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'apps.pages',
     'apps.config',
 ]
 
@@ -51,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'DigitalHub.urls'
+ROOT_URLCONF = 'Love.urls'
 
 TEMPLATES = [
     {
@@ -68,7 +67,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'DigitalHub.wsgi.application'
+WSGI_APPLICATION = 'Love.wsgi.application'
 
 
 # Database

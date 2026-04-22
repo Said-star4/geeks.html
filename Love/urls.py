@@ -18,8 +18,7 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
-from apps.config.views import index, about, services, contacts
-
+from apps.config.views import index, about, services, contacts, blog, blog_single, page_404
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -27,6 +26,9 @@ urlpatterns = [
     path('about/', about, name='about'),
     path('services/', services, name='services'),
     path('contacts/', contacts, name='contacts'),
+    path('blog/', blog, name='blog'),
+    path('blog-single/', blog_single, name='blog_single'),
+    path('404/', page_404, name='404'),
 ]
 
 if settings.DEBUG:
